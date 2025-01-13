@@ -9,10 +9,12 @@ library(ggplot2)
 
 
 #Importing dataset
+
 tree <- read.csv("C:/Users/nazru/OneDrive/Desktop/R Practice/tree.csv")
 
 
 #Scatter plot
+
 ggplot(data = tree, mapping = aes(x=dbh,y=volume))+
   geom_point()+
   theme_bw()
